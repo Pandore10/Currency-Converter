@@ -46,7 +46,7 @@ public class Conversormoedas {
     }
 
     public static void exibirAjuda() {
-        System.out.println("Uso: cconversor [options]");
+        System.out.println("Usage: cconversor [options]");
         System.out.println("Options");
         System.out.println("  -l --list                                               List currencies");
         System.out.println("  -c --convert <currency1> <currency2> <value> Convert currency1 into currency2");
@@ -90,23 +90,4 @@ public class Conversormoedas {
             return null;
         }
     }
-    /*public static void main(String[] args) {
-        HttpClient client = HttpClient.newBuilder().build();
-        HttpRequest request = HttpRequest.newBuilder()
-        .uri(URI.create("https://api.adviceslip.com/advice"))
-        .GET()
-        .build();
-
-        try {
-            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-            ObjectMapper mapper = new ObjectMapper();
-
-            JsonNode jsonNode = mapper.readTree(response.body());
-            String advice = jsonNode.get("slip").get("advice").asText();
-            System.out.println(advice);
-
-        } catch (Exception e) {
-            System.err.println(e);
-        }
-    }*/
 }
